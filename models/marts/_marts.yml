@@ -1,0 +1,51 @@
+version: 2
+
+models:
+  - name: dim_dealers
+    description: >
+      SCD2 dealer dimension. One row per dealer version; `is_current` flags the
+      live record. Joins on `dealer_id` for current-state analysis, or on the
+      date-bounded `valid_from`/`valid_to` window for point-in-time analysis.
+    columns:
+      - name: dealer_key
+        description: "Surrogate key (dealer_id + valid_from). Unique per version."
+        tests: [unique, not_null]
+      - name: dealer_id
+        description: "Natural key for the dealer."
+        tests: [not_null]
+      - name: is_current
+        description: "True for the current version of each dealer."
+
+  - name: dim_dates
+    description: "Date dimension, one row per calendar day (2024-2025)."
+    columns:
+      - name: date_day
+        tests: [unique, not_null]
+
+  - name: fct_funnel
+    description: >
+      Funnel fact at lead grain. Definitions: a lead `is_quoted` if it has at
+      least one quote; `is_bound` if it converted to a policy.
+    columns:
+      - name: lead_id
+        tests: [unique, not_null]
+      - name: dealer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_dealers')
+              field: dealer_id
+
+  - name: mart_dealer_performance
+    description: >
+      Dealer funnel performance by month. Metric definitions:
+      lead_to_quote_rate = quotes / leads;
+      quote_to_policy_rate = policies / quotes;
+      lead_to_policy_rate = policies / leads;
+      bound_premium_value = sum(monthly_premium * term_months) for bound policies.
+    columns:
+      - name: lead_to_policy_rate
+        description: "Share of leads that became a bound policy. Must be between 0 and 1."
+      - name: leads
+        description: "Count of leads created in the month for the dealer."
+        tests: [not_null]

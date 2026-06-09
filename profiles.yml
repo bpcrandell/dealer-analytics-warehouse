@@ -1,0 +1,7 @@
+dealer_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: dealer_warehouse.duckdb
+      threads: 4

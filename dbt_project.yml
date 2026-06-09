@@ -1,0 +1,24 @@
+name: 'dealer_analytics_warehouse'
+version: '1.0.0'
+config-version: 2
+
+profile: 'dealer_analytics'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+snapshot-paths: ["snapshots"]
+test-paths: ["tests"]
+macro-paths: ["macros"]
+target-path: "target"
+clean-targets: ["target", "dbt_packages"]
+
+models:
+  dealer_analytics_warehouse:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+
+seeds:
+  dealer_analytics_warehouse:
+    +quote_columns: true

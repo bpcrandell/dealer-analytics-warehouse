@@ -1,0 +1,62 @@
+version: 2
+
+models:
+  - name: stg_dealers
+    description: "One cleaned row per dealer. The dealer master for the channel."
+    columns:
+      - name: dealer_id
+        description: "Primary key for a dealer."
+        tests: [unique, not_null]
+      - name: status
+        description: "Lifecycle state of the dealer on the platform."
+        tests:
+          - accepted_values:
+              values: ['active', 'paused', 'churned']
+
+  - name: stg_leads
+    description: "One row per insurance lead generated at a dealership."
+    columns:
+      - name: lead_id
+        tests: [unique, not_null]
+      - name: dealer_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_dealers')
+              field: dealer_id
+      - name: lead_source
+        tests:
+          - accepted_values:
+              values: ['Call Center', 'Web', 'QR Code']
+      - name: department
+        tests:
+          - accepted_values:
+              values: ['Sales', 'Service', 'F&I']
+
+  - name: stg_quotes
+    description: "One row per insurance quote. Not every lead is quoted."
+    columns:
+      - name: quote_id
+        tests: [unique, not_null]
+      - name: lead_id
+        tests:
+          - relationships:
+              to: ref('stg_leads')
+              field: lead_id
+
+  - name: stg_policies
+    description: "One row per bound policy. The bottom of the funnel."
+    columns:
+      - name: policy_id
+        tests: [unique, not_null]
+      - name: quote_id
+        tests:
+          - relationships:
+              to: ref('stg_quotes')
+              field: quote_id
+
+  - name: stg_calls
+    description: "One row per call-center call (telephony)."
+    columns:
+      - name: call_id
+        tests: [unique, not_null]

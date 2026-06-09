@@ -1,0 +1,3 @@
+# Install with: pip install -r requirements.txt
+# dbt-duckdb pulls in dbt-core and the DuckDB engine.
+dbt-duckdb>=1.9,<2.0

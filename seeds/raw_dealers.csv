@@ -1,0 +1,61 @@
+dealer_id,dealer_name,dealer_group,region,state,fulfillment_carrier,status,implementation_date,updated_at
+1,Tampa Volkswagen,Great Lakes Auto Group,Midwest,MI,In-House Agency,active,2023-10-09,2025-12-31 12:00:00
+2,Sacramento Honda,Sunbelt Motors,Midwest,WI,In-House Agency,active,2024-03-08,2025-12-31 12:00:00
+3,Hartford Nissan,Sunbelt Motors,Midwest,WI,Carrier B (DCO),active,2023-07-23,2025-12-31 12:00:00
+4,Newark Kia,Sunbelt Motors,West,CA,Carrier A (DCO),active,2023-06-13,2025-12-31 12:00:00
+5,Nashville Hyundai,Independent,West,CA,Carrier B (DCO),active,2023-04-05,2025-12-31 12:00:00
+6,Seattle Chevrolet,Independent,Midwest,IN,Carrier B (DCO),active,2024-07-03,2025-12-31 12:00:00
+7,Austin GMC,Sunbelt Motors,West,NV,Carrier B (DCO),active,2023-07-16,2025-12-31 12:00:00
+8,Dallas GMC,Pacific Crest Dealers,Midwest,OH,Carrier A (DCO),active,2023-04-14,2025-12-31 12:00:00
+9,Sacramento Mazda,Sunbelt Motors,West,AZ,In-House Agency,active,2023-08-03,2025-12-31 12:00:00
+10,Hartford Honda,Pacific Crest Dealers,South,FL,Carrier A (DCO),active,2024-04-18,2025-12-31 12:00:00
+11,Sacramento Honda,Independent,South,TX,In-House Agency,active,2023-11-20,2025-12-31 12:00:00
+12,Dallas Toyota,Pacific Crest Dealers,West,WA,Carrier A (DCO),active,2024-05-26,2025-12-31 12:00:00
+13,Columbus Mazda,Heartland Automotive,South,TN,Carrier B (DCO),active,2024-07-05,2025-12-31 12:00:00
+14,Austin Chevrolet,Sunbelt Motors,South,FL,In-House Agency,active,2024-06-05,2025-12-31 12:00:00
+15,Seattle Mazda,Heartland Automotive,South,NC,In-House Agency,active,2024-09-02,2025-12-31 12:00:00
+16,Cleveland GMC,Independent,West,NV,Carrier B (DCO),active,2023-01-12,2025-12-31 12:00:00
+17,Dallas Ford,Pacific Crest Dealers,West,CA,In-House Agency,active,2023-10-28,2025-12-31 12:00:00
+18,Madison GMC,Independent,South,TN,In-House Agency,paused,2023-04-19,2025-12-31 12:00:00
+19,Hartford Jeep,Great Lakes Auto Group,South,FL,In-House Agency,active,2024-01-18,2025-12-31 12:00:00
+20,Nashville Kia,Sunbelt Motors,West,CO,Carrier A (DCO),active,2023-01-20,2025-12-31 12:00:00
+21,Atlanta Chevrolet,Independent,South,TN,Carrier A (DCO),active,2023-03-22,2025-12-31 12:00:00
+22,Reno Mazda,Heartland Automotive,South,NC,Carrier A (DCO),active,2024-07-16,2025-12-31 12:00:00
+23,Nashville Subaru,Independent,South,GA,Carrier B (DCO),churned,2024-02-13,2025-12-31 12:00:00
+24,Detroit Mazda,Independent,Midwest,OH,Carrier A (DCO),active,2023-08-19,2025-12-31 12:00:00
+25,Austin Honda,Great Lakes Auto Group,South,TX,Carrier A (DCO),active,2023-03-14,2025-12-31 12:00:00
+26,Atlanta Honda,Independent,West,CA,Carrier A (DCO),active,2024-06-10,2025-12-31 12:00:00
+27,Albany Chevrolet,Great Lakes Auto Group,Northeast,PA,In-House Agency,paused,2024-04-29,2025-12-31 12:00:00
+28,Austin GMC,Great Lakes Auto Group,Northeast,NJ,Carrier A (DCO),active,2024-03-09,2025-12-31 12:00:00
+29,Albany Jeep,Heartland Automotive,Northeast,NJ,Carrier A (DCO),active,2023-04-22,2025-12-31 12:00:00
+30,Sacramento Subaru,Independent,Northeast,PA,Carrier A (DCO),active,2023-10-13,2025-12-31 12:00:00
+31,Charlotte Toyota,Heartland Automotive,Midwest,WI,Carrier B (DCO),churned,2023-01-16,2025-12-31 12:00:00
+32,Denver Nissan,Great Lakes Auto Group,Northeast,PA,Carrier B (DCO),paused,2024-02-15,2025-12-31 12:00:00
+33,Hartford GMC,Heartland Automotive,West,CO,Carrier A (DCO),active,2023-10-20,2025-12-31 12:00:00
+34,Hartford Ford,Pacific Crest Dealers,South,GA,Carrier A (DCO),churned,2023-08-11,2025-12-31 12:00:00
+35,Reno Toyota,Great Lakes Auto Group,Midwest,WI,In-House Agency,active,2024-05-03,2025-12-31 12:00:00
+36,Charlotte Nissan,Great Lakes Auto Group,Midwest,OH,In-House Agency,active,2023-03-12,2025-12-31 12:00:00
+37,Sacramento Nissan,Independent,South,TN,In-House Agency,active,2024-08-31,2025-12-31 12:00:00
+38,Newark Honda,Pacific Crest Dealers,West,AZ,Carrier B (DCO),active,2023-07-29,2025-12-31 12:00:00
+39,Sacramento Ford,Heartland Automotive,South,GA,In-House Agency,active,2024-04-13,2025-12-31 12:00:00
+40,Phoenix Toyota,Pacific Crest Dealers,Midwest,MI,Carrier A (DCO),active,2024-07-04,2025-12-31 12:00:00
+41,Hartford Volkswagen,Pacific Crest Dealers,South,GA,In-House Agency,active,2023-10-19,2025-12-31 12:00:00
+42,Cleveland Toyota,Pacific Crest Dealers,Midwest,WI,Carrier A (DCO),churned,2023-11-03,2025-12-31 12:00:00
+43,Albany Volkswagen,Pacific Crest Dealers,Midwest,WI,Carrier A (DCO),active,2023-06-09,2025-12-31 12:00:00
+44,Austin Chevrolet,Heartland Automotive,West,NV,Carrier B (DCO),active,2024-05-15,2025-12-31 12:00:00
+45,Phoenix Toyota,Heartland Automotive,Midwest,MI,In-House Agency,active,2023-12-08,2025-12-31 12:00:00
+46,Tampa Jeep,Great Lakes Auto Group,Northeast,CT,Carrier B (DCO),active,2023-01-10,2025-12-31 12:00:00
+47,Nashville Ford,Pacific Crest Dealers,South,NC,Carrier A (DCO),active,2023-05-11,2025-12-31 12:00:00
+48,Columbus Mazda,Sunbelt Motors,South,TX,Carrier A (DCO),active,2023-12-29,2025-12-31 12:00:00
+49,Newark Nissan,Sunbelt Motors,South,FL,Carrier B (DCO),active,2024-02-27,2025-12-31 12:00:00
+50,Atlanta Honda,Sunbelt Motors,South,TX,Carrier B (DCO),paused,2024-01-27,2025-12-31 12:00:00
+51,Albany Nissan,Pacific Crest Dealers,West,AZ,Carrier B (DCO),active,2023-08-22,2025-12-31 12:00:00
+52,Seattle GMC,Independent,Midwest,IL,Carrier B (DCO),active,2023-12-26,2025-12-31 12:00:00
+53,Phoenix Ford,Great Lakes Auto Group,Midwest,MI,In-House Agency,active,2023-09-25,2025-12-31 12:00:00
+54,Reno Chevrolet,Heartland Automotive,Northeast,NJ,In-House Agency,active,2023-11-18,2025-12-31 12:00:00
+55,Detroit Jeep,Independent,South,GA,In-House Agency,active,2023-02-15,2025-12-31 12:00:00
+56,Newark Mazda,Pacific Crest Dealers,South,GA,In-House Agency,active,2024-03-17,2025-12-31 12:00:00
+57,Columbus Hyundai,Heartland Automotive,Midwest,IL,In-House Agency,active,2024-06-03,2025-12-31 12:00:00
+58,Seattle GMC,Sunbelt Motors,West,NV,In-House Agency,active,2023-05-11,2025-12-31 12:00:00
+59,Madison Kia,Sunbelt Motors,West,CO,Carrier B (DCO),paused,2024-07-15,2025-12-31 12:00:00
+60,Albany Jeep,Heartland Automotive,West,CO,In-House Agency,active,2024-03-28,2025-12-31 12:00:00
