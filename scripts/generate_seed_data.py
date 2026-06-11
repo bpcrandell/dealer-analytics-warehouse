@@ -30,7 +30,7 @@ REGIONS = {"Midwest": ["MI", "OH", "IL", "IN", "WI"],
            "South": ["TX", "FL", "GA", "NC", "TN"],
            "West": ["CA", "WA", "AZ", "CO", "NV"],
            "Northeast": ["NY", "PA", "NJ", "MA", "CT"]}
-CARRIERS = ["Carrier A (DCO)", "Carrier B (DCO)", "In-House Agency"]
+CARRIERS = ["Carrier A", "Carrier B", "In-House Agency"]
 BRANDS = ["Ford", "Chevrolet", "Toyota", "Honda", "Kia", "Hyundai", "Nissan",
           "Subaru", "Jeep", "Mazda", "GMC", "Volkswagen"]
 CITIES = ["Detroit", "Austin", "Sacramento", "Cleveland", "Tampa", "Denver",
